@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4E9F3D;
+}
+
+#clear{
+    width: 211px;
+	border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 55px;
+}
+
+i {
+    color: #191A19;
+    position: relative;
+    right: 5px;
+    top: 2px;
+}
+
+.container
+{
+    width: 340px;
+    height: 1000; 
+    margin: auto;
+    border: 100px;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 0 30px #191A19;
+    margin-top: 35px;
+}
+
+input
+{
+    width: 60px;
+    height: 60px;
+	border-radius: 20px;
+	margin: 5px;
+	font-size: 25px;
+    cursor: pointer;
+    margin-left: 7px;
+    background-color: #cce6c7;
+    border: none;
+}
+
+#calc{
+    width: 285px;
+	border-radius: 8px;
+	padding: 20px;
+    height: 90px;
+	margin-left: 8px;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ebffe4;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.theme-toggler.active {
+    color: #ebffe4;
+    padding-left: 900px;
+}
+
+.theme-toggler.active::before{
+    background-color: #ebffe4;
+}
+
+.theme-toggler::before {
+    content:  '';
+    height: 37px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 60%;
+    background-color: #cbf5ba;
+    z-index: -1;
+    box-shadow: 0 0 20px #bed4be;
+}
+
+/* tema light */
+
+.container {
+    background-color: #d7ffd5;
+}
+
+.container input#clear {
+    background-color: #99A799;
+    color: black;
+}
+
+.container input.btn-number {
+    background-color: #ADC2A9;
+    color: black;
+}
+
+.container input.btn-operator {
+    background-color: #D3E4CD;
+    color: black;
+}
+
+.container input.btn-equal {
+    background-color: #99A799;
+    color: black;
+}
+
+/* tema dark */
+
+.container.dark {
+    background-color: #191A19;
+}
+
+.container.dark input#clear {
+    background-color: #D8E9A8;
+    color: #1E5128;
+}
+
+.container.dark input.btn-number {
+      background-color: #4E9F3D;
+      color: white;
+}
+
+.container.dark input.btn-operator {
+    background-color: #1E5128;
+    color: white;
+}
+
+.container.dark input.btn-equal {
+    background-color: #D8E9A8;
+    color: #1E5128;
+}

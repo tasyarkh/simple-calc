@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="logo.png">
+<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+<title> | Calculator | </title>
+</head>
+<body>
+
+<div class= "container dark">
+
+  <div class="theme-toggler active">
+    <i class="far fa-lightbulb"></i>
+  </div>
+
+<form name = "form1">
+	
+
+  <input id = "calc" type ="text" name = "answer"> <br> <br>
+  
+  <input class="btn-number" type = "button" value = "1" onclick = "form1.answer.value += '1' ">
+  <input class="btn-number" type = "button" value = "2" onclick = "form1.answer.value += '2' ">
+  <input class="btn-number" type = "button" value = "3" onclick = "form1.answer.value += '3' ">
+  <input class="btn-operator" type = "button" value = "+" onclick = "form1.answer.value += '+' ">
+  <br> <br>
+  
+  <input class="btn-number" type = "button" value = "4" onclick = "form1.answer.value += '4' ">
+  <input class="btn-number" type = "button" value = "5" onclick = "form1.answer.value += '5' ">
+  <input class="btn-number" type = "button" value = "6" onclick = "form1.answer.value += '6' ">
+  <input class="btn-operator" type = "button" value = "-" onclick = "form1.answer.value += '-' ">
+  <br> <br>
+  
+  <input class="btn-number" type = "button" value = "7" onclick = "form1.answer.value += '7' ">
+  <input class="btn-number" type = "button" value = "8" onclick = "form1.answer.value += '8' ">
+  <input class="btn-number" type = "button" value = "9" onclick = "form1.answer.value += '9' ">
+  <input class="btn-operator" type = "button" value = "&times;" onclick = "form1.answer.value += '*' ">
+  <br> <br>
+  
+  
+  <input class="btn-number" type = "button" value = "00" onclick = "form1.answer.value += '00' ">
+  <input class="btn-number" type = "button" value = "0" onclick = "form1.answer.value += '0' ">
+	<input class="btn-operator" type = "button" value = "&divide;" onclick = "form1.answer.value += '/' ">
+  
+  <input class="btn-equal" style="height: 129px; position: absolute; margin-left: 11px;" type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">
+  <br> 
+  
+  <input type = "button" value = "Del" onclick = "form1.answer.value = ' ' " id= "clear" >
+  <br> 
+  
+</form>
+</div>
+<script src="scrpt.js"></script>
+</body>
+</html>
